@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="Suite" parallel="classes" thread-count="5">
+<suite name="Webhook using GitScm " parallel="classes" thread-count="5">
 
 	<test name="Test">
 		<classes>
