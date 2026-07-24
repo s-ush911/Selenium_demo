@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestSuite" thread-count="1" parallel="tests">
+	<test name="ChromeTest">
+		<parameter name="browser" value="chrome" />
+		<parameter name="url" value="http://secure.smartbearsoftware.com/samples/TestComplete11/WebOrders/Login.aspx"/>
+		<classes>
+			<class name="com.webOrder.Weborder_Cross_Browser_Using_BaseClass_with_DataProvider"/>
+		</classes>
+	</test>
+	<test name="FirefoxTest">
+		<parameter name="browser" value="Firefox" />
+		<parameter name="url" value="http://secure.smartbearsoftware.com/samples/TestComplete11/WebOrders/Login.aspx"/>
+		
+		<classes>
+			<class name="com.webOrder.Weborder_Cross_Browser_Using_BaseClass_with_DataProvider"/>
+		</classes>
+	</test>
+	<test name="EdgeTest">
+		<parameter name="browser" value="Edge" />
+		<parameter name="url" value="http://secure.smartbearsoftware.com/samples/TestComplete11/WebOrders/Login.aspx"/>
+		
+		<classes>
+			<class name="com.webOrder.Weborder_Cross_Browser_Using_BaseClass_with_DataProvider"/>
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="Failed suite [TestSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="1" parallel="tests" name="ChromeTest(failed)">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value="http://secure.smartbearsoftware.com/samples/TestComplete11/WebOrders/Login.aspx"/>
+    <classes>
+      <class name="com.webOrder.ExtentReport_withScreenshot_CallingBaseClass_CrossBrowser">
+        <methods>
+          <include name="startReport"/>
+          <include name="pre_condition"/>
+          <include name="createOrder_BaseClass"/>
+          <include name="closeBrowser"/>
+          <include name="captureScreenShot"/>
+        </methods>
+      </class> <!-- com.webOrder.ExtentReport_withScreenshot_CallingBaseClass_CrossBrowser -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+  <test thread-count="1" parallel="tests" name="FirefoxTest(failed)">
+    <parameter name="browser" value="Firefox"/>
+    <parameter name="url" value="http://secure.smartbearsoftware.com/samples/TestComplete11/WebOrders/Login.aspx"/>
+    <classes>
+      <class name="com.webOrder.ExtentReport_withScreenshot_CallingBaseClass_CrossBrowser">
+        <methods>
+          <include name="webOrder_Login"/>
+          <include name="startReport"/>
+          <include name="pre_condition"/>
+          <include name="createOrder_BaseClass"/>
+          <include name="closeBrowser"/>
+          <include name="captureScreenShot"/>
+        </methods>
+      </class> <!-- com.webOrder.ExtentReport_withScreenshot_CallingBaseClass_CrossBrowser -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+  <test thread-count="1" parallel="tests" name="EdgeTest(failed)">
+    <parameter name="browser" value="Edge"/>
+    <parameter name="url" value="http://secure.smartbearsoftware.com/samples/TestComplete11/WebOrders/Login.aspx"/>
+    <classes>
+      <class name="com.webOrder.ExtentReport_withScreenshot_CallingBaseClass_CrossBrowser">
+        <methods>
+          <include name="startReport"/>
+          <include name="pre_condition"/>
+          <include name="createOrder_BaseClass"/>
+          <include name="closeBrowser"/>
+          <include name="captureScreenShot"/>
+        </methods>
+      </class> <!-- com.webOrder.ExtentReport_withScreenshot_CallingBaseClass_CrossBrowser -->
+    </classes>
+  </test> <!-- EdgeTest(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->
